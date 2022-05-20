@@ -1,5 +1,5 @@
 import { ColProps } from './IColProps';
-import '../../../../Styles/general.css';
+import '../../../../Styles/GeneralClasses/generalClasses.css';
 
 function Col({ styles, children, onAction }: ColProps) {
     const classes = 'flex-col ' + styles;

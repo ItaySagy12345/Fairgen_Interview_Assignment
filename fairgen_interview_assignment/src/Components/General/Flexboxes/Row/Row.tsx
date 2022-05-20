@@ -1,5 +1,5 @@
 import { RowProps } from './IRowProps';
-import '../../../../Styles/general.css';
+import '../../../../Styles/GeneralClasses/generalClasses.css';
 
 function Row({ styles, children, onAction }: RowProps) {
     const classes = 'flex-row ' + styles;
