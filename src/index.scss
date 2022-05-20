@@ -4,12 +4,12 @@
     box-sizing: border-box;
     user-select: none;
     font-family: var(--font-theme);
-    border: 1px solid red;
 }
 
 :root {
     --theme-black: rgb(45, 44, 44);
     --theme-gray: rgb(161, 149, 149);
+    --theme-white: whitesmoke;
     --font-theme: Arial, Helvetica, sans-serif;
 }
 
@@ -22,5 +22,5 @@ body {
 body {
     min-height: 100%;
     width: 100%;
-    background-color: $themeBlack;
+    background-color: var(--theme-black);
 }

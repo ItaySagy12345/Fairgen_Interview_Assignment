@@ -1,5 +1,5 @@
 .comment-form {
-  height: 25vh;
+  height: 35vh;
   width: 50%;
   margin: 5% auto;
   -webkit-box-pack: center;
@@ -10,50 +10,27 @@
 
 .comment-form__inner {
   height: 90%;
-  width: 98%;
+  width: 95%;
 }
 
-.comment-textarea {
+.comment-form__inner__textarea {
   height: 75%;
   width: 100%;
   outline: none;
   border: none;
   resize: none;
-  color: #cccccc;
+  cursor: -webkit-grab;
+  cursor: grab;
+  font-size: 1.25rem;
+  color: var(--theme-gray);
   background-color: transparent;
 }
 
-.comment-char-counter {
-  height: 1rem;
-  width: 100%;
-  font-size: 0.75rem;
-  color: whitesmoke;
-}
-
-.comment-error-submit-container {
+.comment-form__inner__submit-button-container {
   height: 20%;
-  width: 100%;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.comment-error-submit-inner-container {
-  height: 100%;
-  width: 100%;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.comment-error-message-container {
-  height: 100%;
-  width: 50%;
+  width: 93%;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 /*# sourceMappingURL=CommentForm.css.map */

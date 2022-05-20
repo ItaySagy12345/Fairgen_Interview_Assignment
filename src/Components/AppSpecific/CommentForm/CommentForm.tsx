@@ -1,8 +1,8 @@
 import * as constants from '../../../Assets/Utils/Constants/constants';
-import GeneralButton from '../../General/GeneralButton/GeneralButton';
 import Col from '../../General/Flexboxes/Column/Col';
 import Row from '../../General/Flexboxes/Row/Row';
-import Sign from '../../General/Sign/Sign';
+import Stack from '@mui/material/Stack';
+import Button from '@mui/material/Button';
 import { useCommentForm } from './useCommentForm';
 import '../../../Styles/GeneralClasses/generalClasses.css';
 import './CommentForm.css';
@@ -11,10 +11,6 @@ function CommentForm() {
     const {
         text,
         textChangeHandler,
-        getSubmitButtonStyles,
-        getErrorMessageStyles,
-        getButtonStatus,
-        getCharCount,
         submitCommentHandler
     } = useCommentForm();
 
@@ -24,30 +20,14 @@ function CommentForm() {
                 <textarea
                     required
                     value={text}
-                    className="comment-textarea"
+                    className="comment-form__inner__textarea"
                     placeholder={constants.COMMENT_FORM_TEXTAREA_PLACEHOLDER}
                     onChange={(event: any) => textChangeHandler(event.target.value)}
                 />
-                <Row styles="comment-char-counter"><>{getCharCount()}</></Row>
-                <Row styles='comment-error-submit-container'>
-                    <Row styles="comment-error-submit-inner-container">
-                        <Row styles="comment-form-error-sign-wrapper">
-                            <Sign
-                                wording={constants.COMMENT_ERROR_MESSAGE}
-                                styles={getErrorMessageStyles()}
-                                colorPrimary={"red"}
-                                colorSecondary={"pink"}
-                                borderRadius={6}
-                            />
-                        </Row>
-                        <Row styles="comment-form-button-wrapper">
-                            <GeneralButton
-                                wording={constants.SUBMIT_COMMENT_BUTTON_WORDING}
-                                styles={getSubmitButtonStyles()}
-                                isDisabled={getButtonStatus()}
-                            />
-                        </Row>
-                    </Row>
+                <Row styles='comment-form__inner__submit-button-container'>
+                    <Stack spacing={2} direction="row">
+                        <Button variant="contained">{constants.SUBMIT_WORDING}</Button>
+                    </Stack>
                 </Row>
             </Col>
         </form>

@@ -1,48 +1,30 @@
 .comment-form {
-    height: 25vh;
+    height: 35vh;
     width: 50%;
     margin: 5% auto;
     justify-content: center;
     background-color: transparent;
-}
 
-.comment-form__inner {
-    height: 90%;
-    width: 98%;
-}
+    &__inner {
+        height: 90%;
+        width: 95%;
 
-.comment-textarea {
-    height: 75%;
-    width: 100%;
-    outline: none;
-    border: none;
-    resize: none;
-    color: rgba(204, 204, 204, 1);
-    background-color: transparent;
-}
+        &__textarea {
+            height: 75%;
+            width: 100%;
+            outline: none;
+            border: none;
+            resize: none;
+            cursor: grab;
+            font-size: 1.25rem;
+            color: var(--theme-gray);
+            background-color: transparent;
+        }
 
-.comment-char-counter {
-    height: 1rem;
-    width: 100%;
-    font-size: 0.75rem;
-    color: whitesmoke;
-}
-
-.comment-error-submit-container {
-    height: 20%;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-}
-
-.comment-error-submit-inner-container {
-    height: 100%;
-    width: 100%;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.comment-error-message-container {
-    height: 100%;
-    width: 50%;
+        &__submit-button-container {
+            height: 20%;
+            width: 93%;
+            justify-content: flex-end;
+        }
+    }
 }

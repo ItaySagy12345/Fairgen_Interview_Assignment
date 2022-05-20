@@ -1,5 +1,5 @@
 .comment-container {
-  min-height: 3rem;
+  height: 10rem;
   width: 100%;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -8,8 +8,20 @@
   overflow-wrap: break-word;
 }
 
-.comment-container div {
+.comment-container__inner {
   height: 95%;
   width: 95%;
+  gap: 5%;
+  overflow: auto;
+}
+
+.comment-container__inner__email {
+  font-size: 1.25rem;
+  color: var(--theme-white);
+}
+
+.comment-container__inner__body {
+  font-size: 1.25rem;
+  color: var(--theme-gray);
 }
 /*# sourceMappingURL=Comment.css.map */

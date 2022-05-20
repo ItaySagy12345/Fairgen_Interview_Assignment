@@ -1,12 +1,24 @@
 .comment-container {
-    min-height: 3rem;
+    height: 10rem;
     width: 100%;
     justify-content: center;
     white-space: pre-wrap;
     overflow-wrap: break-word;
 
-    div {
+    &__inner {
         height: 95%;
         width: 95%;
+        gap: 5%;
+        overflow: auto;
+
+        &__email {
+            font-size: 1.25rem;
+            color: var(--theme-white);
+        }
+
+        &__body {
+            font-size: 1.25rem;
+            color: var(--theme-gray);
+        }
     }
 }
