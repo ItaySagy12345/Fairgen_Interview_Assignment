@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,wBAAwB,CAAC;EACrB,KAAK,EAAE,GAAG;EACV,GAAG,EAAE,MAAM;EACX,WAAW,EAAE,MAAM;EACnB,aAAa,EAAE,IAAI;CACtB",
+    "sources": [
+        "CommentsContainer.scss"
+    ],
+    "names": [],
+    "file": "CommentsContainer.css"
+}

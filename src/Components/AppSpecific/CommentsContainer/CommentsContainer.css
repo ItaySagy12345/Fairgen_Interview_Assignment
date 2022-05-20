@@ -1,0 +1,9 @@
+.comments-grid-container {
+  width: 90%;
+  gap: 1.5rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 3rem;
+}
+/*# sourceMappingURL=CommentsContainer.css.map */

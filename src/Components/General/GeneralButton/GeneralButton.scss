@@ -1,0 +1,26 @@
+.button {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    outline: none;
+}
+
+.general-button {
+    color: white;
+    background-color: brown;
+    border: 1px solid transparent;
+    cursor: pointer;
+
+    &:hover {
+        border: 1px solid brown;
+        background-color: white;
+        color: brown;
+        box-shadow: inset 0 0 20px 0 rgba(172, 172, 172, 0.25);
+    }
+
+    &:active {
+        box-shadow: inset 0 0 20px 0 rgba(255, 255, 255, 0.25);
+    }
+}

@@ -1,0 +1,15 @@
+.comment-container {
+  min-height: 3rem;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  white-space: pre-wrap;
+  overflow-wrap: break-word;
+}
+
+.comment-container div {
+  height: 95%;
+  width: 95%;
+}
+/*# sourceMappingURL=Comment.css.map */

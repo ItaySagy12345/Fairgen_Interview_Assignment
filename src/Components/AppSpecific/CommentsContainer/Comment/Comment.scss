@@ -1,0 +1,12 @@
+.comment-container {
+    min-height: 3rem;
+    width: 100%;
+    justify-content: center;
+    white-space: pre-wrap;
+    overflow-wrap: break-word;
+
+    div {
+        height: 95%;
+        width: 95%;
+    }
+}
