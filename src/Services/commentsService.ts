@@ -12,7 +12,7 @@ export async function postComment(newComment: NewComment) {
 
 export async function getComments() {
     try {
-        const response = await constants.JSON_PLACEHOLDER_API.get(constants.GET_COMMENTS_ROUTE);
+        const response = await constants.JSON_PLACEHOLDER_API.get(`${constants.GET_COMMENTS_ROUTE}?_start=0&_limit=20`);
         return response.data;
     } catch (err: any) {
         throw err.response.data.message;
