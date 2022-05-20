@@ -8,7 +8,7 @@ function CommentsContainer({ comments }: CommentsContainerProps) {
         <SymmetricalGrid styles="comments-grid-container" numOfColumns={3}>
             {comments.map((comment) => (
                 <Comment
-                    key={comment.postId}
+                    key={comment.id}
                     comment={comment}>
                 </Comment>
             ))}

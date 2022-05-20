@@ -13,11 +13,13 @@ export function useCommentForm() {
     const submitCommentHandler = async (event: any) => {
         try {
             event.preventDefault();
-            const newComment: NewComment = { id: nanoid(1), text: text };
-            await commentsService.postComment(newComment);
-            resetCommentFields();
+            const newComment: NewComment = { id: nanoid(5), text: text };
+            const postCommentConfirmation: number = await commentsService.postComment(newComment);
+            // postCommentConfirmation === 200 && render success message...
         } catch (err: any) {
             console.log(err);
+        } finally {
+            resetCommentFields();
         }
     };
 

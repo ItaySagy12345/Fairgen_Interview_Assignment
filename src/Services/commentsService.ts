@@ -3,8 +3,8 @@ import { NewComment } from '../Interfaces/INewComment';
 
 export async function postComment(newComment: NewComment) {
     try {
-        await constants.ASSIGN_COMMENT_API.post(constants.ASSIGN_COMMENT_ROUTE, newComment);
-        // return response.status;
+        const response = await constants.ASSIGN_COMMENT_API.post(constants.ASSIGN_COMMENT_ROUTE, newComment);
+        return response.status;
     } catch (err: any) {
         throw err.response.data.message;
     }

@@ -26,7 +26,7 @@ function CommentForm() {
                 />
                 <Row styles='comment-form__inner__submit-button-container'>
                     <Stack spacing={2} direction="row">
-                        <Button variant="contained">{constants.SUBMIT_WORDING}</Button>
+                        <Button type="submit" variant="contained">{constants.SUBMIT_WORDING}</Button>
                     </Stack>
                 </Row>
             </Col>
