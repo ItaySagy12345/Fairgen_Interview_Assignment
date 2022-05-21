@@ -33,4 +33,10 @@
       -ms-flex-pack: end;
           justify-content: flex-end;
 }
+
+@media (max-width: 1000px) {
+  .comment-form {
+    width: 100%;
+  }
+}
 /*# sourceMappingURL=CommentForm.css.map */

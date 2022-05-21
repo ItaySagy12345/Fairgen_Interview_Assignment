@@ -12,7 +12,6 @@ function CommentsContainer({ comments, hasMoreComments, onFetchMoreComments }: C
 
     return (
         <InfiniteScroll
-            style={{ margin: 50 }}
             dataLength={comments.length}
             next={onFetchMoreComments}
             hasMore={hasMoreComments}
