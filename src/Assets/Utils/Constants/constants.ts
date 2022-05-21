@@ -23,3 +23,4 @@ export const SUBMIT_WORDING = "Submit";
 
 //Numbers:
 export const COMMENT_MAX_LENGTH = 100;
+export const DEBOUNCE_TIMER = 500;
