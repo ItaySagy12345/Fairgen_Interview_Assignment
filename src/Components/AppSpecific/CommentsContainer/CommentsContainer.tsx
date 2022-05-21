@@ -8,7 +8,7 @@ import Comment from "./Comment/Comment";
 import './CommentsContainer.css';
 
 function CommentsContainer({ comments, hasMoreComments, onFetchMoreComments }: CommentsContainerProps) {
-    const { getNumOfColumns } = useCommentsContainer();
+    const { numOfColumns } = useCommentsContainer();
 
     return (
         <InfiniteScroll
@@ -18,7 +18,7 @@ function CommentsContainer({ comments, hasMoreComments, onFetchMoreComments }: C
             loader={<h4>Loading...</h4>}
             endMessage={<Row styles="end-message"><>{constants.SCROLL_END_MESSAGE}</></Row>}>
 
-            <SymmetricalGrid styles="comments-grid-container" numOfColumns={getNumOfColumns()}>
+            <SymmetricalGrid styles="comments-grid-container" numOfColumns={numOfColumns}>
                 {comments.map((comment) => (
                     <Comment
                         key={comment.id}

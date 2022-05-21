@@ -2,7 +2,7 @@ import * as commentsService from '../../../Services/commentsService';
 import * as constants from '../../../Assets/Utils/Constants/constants';
 import { useDebounce } from '../../../Hooks/useDebounce';
 import { NewComment } from '../../../Interfaces/INewComment';
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useCallback } from 'react';
 import { nanoid } from 'nanoid';
 
 export function useCommentForm() {
@@ -11,9 +11,9 @@ export function useCommentForm() {
     const [newComment, setNewComment] = useState<NewComment>({ id: '', text: '' });
     const debouncedNewComment = useDebounce<any>(newComment, constants.DEBOUNCE_TIMER);
 
-    const textChangeHandler = (inputText: string) => {
+    const textChangeHandler = useCallback((inputText: string) => {
         setText(inputText);
-    };
+    }, []);
 
     useEffect(() => {
         if (!didMount) {
