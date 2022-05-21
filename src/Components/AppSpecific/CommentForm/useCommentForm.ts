@@ -24,8 +24,8 @@ export function useCommentForm() {
     }, [debouncedNewComment]);
 
     const submitComment = async (newComment: NewComment) => {
-        const postCommentConfirmation: number = await commentsService.postComment(newComment);
-        // postCommentConfirmation === 200 && render success message...
+        await commentsService.postComment(newComment);
+        // Render success message based on returned status code being 200 or not.
     };
 
     const submitCommentHandler = async (event: any) => {
