@@ -1,5 +1,13 @@
+.end-message {
+    color: var(--theme-white);
+    font-weight: bold;
+    font-size: 1.25rem;
+    justify-content: center;
+    padding-bottom: 2rem;
+}
+
 .comments-grid-container {
-    width: 90%;
+    width: 100%;
     gap: 1.5rem;
     align-items: center;
     margin-bottom: 3rem;

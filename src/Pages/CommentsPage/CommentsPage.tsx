@@ -3,12 +3,16 @@ import CommentsContainer from '../../Components/AppSpecific/CommentsContainer/Co
 import { useCommentsPage } from './useCommentsPage';
 
 function CommentsPage() {
-    const { comments } = useCommentsPage();
+    const {
+        comments,
+        hasMoreComments,
+        getAndSetComments
+    } = useCommentsPage();
 
     return (
         <>
             <CommentForm />
-            <CommentsContainer comments={comments} />
+            <CommentsContainer comments={comments} hasMoreComments={hasMoreComments} onFetchMoreComments={getAndSetComments} />
         </>
     );
 }

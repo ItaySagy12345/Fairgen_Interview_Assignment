@@ -20,7 +20,10 @@ export const CHAR_COUNT_WORDING = "Char Count:";
 export const COMMENT_FORM_TEXTAREA_PLACEHOLDER = "Once upon a time...";
 export const SUBMIT_COMMENT_BUTTON_WORDING = "Submit Comment";
 export const SUBMIT_WORDING = "Submit";
+export const SCROLL_END_MESSAGE = "No More Comments...";
 
 //Numbers:
+export const MAX_NUM_COMMENTS = 500;
+export const COMMENT_FETCH_INCREMENT = 20;
 export const COMMENT_MAX_LENGTH = 100;
 export const DEBOUNCE_TIMER = 500;
